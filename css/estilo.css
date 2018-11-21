@@ -1,0 +1,431 @@
+
+
+        body {
+        
+            background-image: url("../img/bg.jpg");
+            background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        }
+    
+        main {
+    
+      display:grid;
+      grid-template-columns: 1fr 900px 1fr;
+      grid-template-rows: 6px 95vh auto auto auto auto;
+      grid-template-areas: "top top top" "uno uno uno" ". dos ." ". tres ." ". cuatro ." "footer footer footer";
+      grid-gap: 50px;
+    
+    }
+    
+    header {
+        position:fixed;
+        top:0px;
+        width:100%;
+        z-index:16;
+    }
+    
+    footer {
+        grid-area: footer;
+        background-color: #4C5454;
+        color: white;
+        padding:20px;
+    }
+    
+    .top {
+        grid-area:top;
+    }
+    
+    
+    
+    
+    .uno {
+    
+      grid-area: uno;
+      overflow: hidden;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      background-color: black;
+    }
+    
+    .dos {
+        background-color: white;
+    
+      grid-area: dos;
+      color: #4C5454;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+    
+    }
+    
+    .tres {
+        background-color: white;
+      grid-area: tres;
+      display: flex;
+      justify-content:center;
+      align-items:flex-start;
+    
+    }
+    
+    .cuatro {
+        background-color: white;
+      grid-area: cuatro;
+      display: flex;
+      justify-content:center;
+      align-items:flex-start;
+      
+    
+    }
+    
+    .dos, .tres, .cuatro {
+        border-radius: 30px;
+    }
+    
+    .carta {
+        display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 56px 100px 80px auto 80px auto 80px auto 80px auto 80px auto 80px auto;
+      grid-template-areas: "margen" "titulo" "c_entrantes" "entrantes" "c_arroces" "arroces" "c_pasta" "pasta" "c_carnes" "carnes" "c_pizzas" "pizzas" "c_bocadillos" "bocadillos";
+      font-size: 20px;
+    }
+    
+    .margen {
+        grid-area: margen;
+        display: flex;
+    }
+    
+    .titulo_carta {
+        grid-area: titulo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .c_entrantes {
+        grid-area: c_entrantes;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #A23E48;
+        border-radius:15px;
+        margin: 20px 0;
+        color: white;
+    }
+    
+    .c_arroces {
+        grid-area: c_arroces;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #A23E48;
+        border-radius:15px;
+        margin: 20px 0;
+        color: white;
+    }
+    
+    .c_pasta {
+        grid-area: c_pasta;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #A23E48;
+        border-radius:15px;
+        margin: 20px 0;
+        color: white;
+    }
+    
+    .c_carnes {
+        grid-area: c_carnes;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #A23E48;
+        border-radius:15px;
+        margin: 20px 0;
+        color: white;
+    }
+    
+    .c_pizzas {
+        grid-area: c_pizzas;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #A23E48;
+        border-radius:15px;
+        margin: 20px 0;
+        color: white;
+    }
+    
+    .c_bocadillos {
+        grid-area: c_bocadillos;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #A23E48;
+        border-radius:15px;
+        margin: 20px 0;
+        color: white;
+    }
+    
+    .entrantes {
+        grid-area:entrantes;
+        display: flex;
+    }
+    
+    .arroces {
+        grid-area:arroces;
+        display: flex;
+    }
+    
+    .pasta {
+        grid-area:pasta;
+        display: flex;
+    }
+    
+    .carnes {
+        grid-area:carnes;
+        display: flex;
+    }
+    
+    .pizzas {
+        grid-area:pizzas;
+        display: flex;
+    }
+    
+    .bocadillos {
+        grid-area:bocadillos;
+        display: flex;
+    }
+    
+    .linea {
+    width:500px;
+    border: none;
+    display:flex;
+    flex-direction: column;
+    
+    }
+    
+    .linea_izquierda {
+        padding-top:3px;
+        width: 100%;
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        border-bottom: 1px dashed #4C5454;
+    }
+    
+    .linea_derecha {
+        padding-top:3px;
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+        border-bottom: 1px dashed #4C5454;
+    }
+    .imagen {
+        width:300px;
+        margin: 20px;
+        display: flex;
+        align-items:center;
+        height: 100%;
+        overflow: hidden;
+    
+    }
+    
+    
+    .ofertas {
+        display:grid;
+        grid-template-columns: 1fr;
+      grid-template-rows: 56px 100px auto;
+      grid-template-areas: "margen" "titulo_menus" "menus";
+      color: white;
+    }
+    
+    .titulo_menus {
+        grid-area: titulo_menus;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4C5454;
+    }
+    
+    .menus{
+        grid-area:menus;
+        display:flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        padding: 0px 20px;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid white;
+        background-color: #A23E48;
+        border-radius:15px;
+        padding:0px 10px;
+        margin: 3% 15px;
+    }
+     .menu div {
+         text-align: center;
+     }
+    
+    .imagen img {
+        width:100%;
+    }
+    
+    .domicilio {
+        font-size: 26px;
+        color:white;
+    }
+    
+    .contacto {
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 56px 100px 80px auto 90px auto;
+        grid-template-areas: "margen" "titulo_contacto" "c_mapa" "mapa" "c_form" "formulario";
+    }
+    
+    .titulo_contacto {
+        grid-area: titulo_contacto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4C5454;
+    }
+    
+    .c_mapa {
+        grid-area: c_mapa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4C5454;
+    }
+    
+    .mapa {
+        grid-area: mapa;
+        border-radius: 10px;
+        overflow: auto;
+        margin:0px 2%;
+        padding: 2%;
+        background-color: #CA848B; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .c_form {
+        grid-area:c_form;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4C5454;
+    }
+    
+    .formulario {
+        grid-area: formulario;
+        display: flex;
+        padding:15px;
+    }
+    
+    @media (max-width: 930px) {
+    
+    main {
+      height: 100vh;
+      display:grid;
+      grid-template-columns: 1fr 90% 1fr;
+      grid-template-rows: 35px 50% auto auto auto auto;
+      grid-template-areas: "top top top" "uno uno uno" ". dos ." ". tres ." ". cuatro ." "footer footer footer";
+      grid-gap: 20px;
+    }
+    
+    .carta {
+        padding:20px;
+    }
+    
+    .imagen {
+        width:30%;
+        margin: 8%;
+        display: flex;
+        align-items:center;
+    
+    }
+    
+    .linea {
+    width:62%;
+    border: none;
+    display:flex;
+    flex-direction: column;
+    font-size:1em;
+    
+    }
+    
+     .menu {
+         margin-bottom:  10%;
+     }
+    
+    }
+    
+    @media (max-width: 430px) {
+        main {
+      height: 100vh;
+      display:grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 50px 30% auto auto auto auto;
+      grid-template-areas: "top" "uno" "dos" "tres" "cuatro" "footer";
+      grid-gap: 0px;
+    }
+    
+    .domicilio {
+        font-size: 1.25rem;
+    }
+    
+    .domicilio img {
+        display:none;
+    }
+    
+    .cabecera {
+        font-size: 0.9rem;
+    }
+    
+    .dos, .tres, .cuatro {
+        border-radius: 0px;
+    }
+    
+    .imagen {
+        
+        width:80%;
+        order:1;
+    
+    }
+    
+    .linea {
+    width:100%;
+    border: none;
+    display:flex;
+    flex-direction: column;
+    font-size:.9em;
+    order:2;
+    
+    }
+    
+    .linea_izquierda {
+    
+        flex-direction: row;
+    
+    }
+    
+    .carta>div{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    }
